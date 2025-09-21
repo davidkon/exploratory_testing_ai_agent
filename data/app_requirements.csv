@@ -1,0 +1,51 @@
+RequirementID,Description,Priority,Area
+REQ_001,The app must record footage from interior camera,High,Recording
+REQ_002,The app must record footage from exterior camera,High,Recording
+REQ_003,Recorded files must be saved on the connected USB drive,High,Storage
+REQ_004,User must be able to watch footage inside the app,Medium,Playback
+REQ_005,User must be able to delete files from within the app,Medium,File Management
+REQ_006,The app uploads theft event recordings to cloud,High,Cloud Upload
+REQ_007,The app notifies the user of completed uploads,High,Notifications
+REQ_008,USB drive must be detected and accessible by the app,High,Storage
+REQ_009,App automatically records 30 seconds after theft event,High,Recording
+REQ_010,The app continues recording when vehicle is parked,High,Recording
+REQ_011,User can browse recordings organized by date and time,Medium,UI
+REQ_012,App allows pausing and resuming live recording,Medium,Recording
+REQ_013,Recorded files must have timestamp metadata,High,Metadata
+REQ_014,App recovers gracefully after USB removal during recording,High,Stability
+REQ_015,Playback supports fast forward and rewind,Medium,Playback
+REQ_016,App supports HD video recording format,Medium,Recording
+REQ_017,User can filter recordings by camera type,Low,UI
+REQ_018,App logs errors and upload failures for diagnostics,High,Logging
+REQ_019,App works robustly with other apps running in background,Medium,Performance
+REQ_020,Battery usage should be optimized during recording,Medium,Performance
+REQ_021,App supports multilingual UI,Low,Localization
+REQ_022,User receives notification when USB is full,High,Notifications
+REQ_023,App prevents overwriting existing recordings,High,Data Integrity
+REQ_024,User can export recordings to PC via USB,High,Storage
+REQ_025,App UI adapts to day/night mode automatically,Low,UI
+REQ_026,Footage plays with synchronized audio when available,Medium,Playback
+REQ_027,The app backs up recordings incrementally to cloud,Medium,Cloud Upload
+REQ_028,Theft event detection triggers recording start reliably,High,Recording
+REQ_029,App supports firmware OTA updates,Low,Maintenance
+REQ_030,User can manually trigger recording,Medium,Recording
+REQ_031,App limits maximum recording length per file,Medium,Recording
+REQ_032,App recovers from sudden power loss preserving recordings,High,Stability
+REQ_033,App displays available USB drive space in UI,Medium,UI
+REQ_034,App encrypts cloud upload data,High,Security
+REQ_035,App logs user interactions for audit trail,Medium,Logging
+REQ_036,App supports Wi-Fi and cellular cloud upload options,Medium,Cloud Upload
+REQ_037,UI buttons comply with automotive safety guidelines,High,UI
+REQ_038,App enables reviewing recordings by driving session,Medium,Playback
+REQ_039,App automatically deletes oldest recordings when USB space is low,High,Storage
+REQ_040,App notifies user of cloud upload errors,High,Notifications
+REQ_041,App functionality verified through unit and integration tests,High,Testing
+REQ_042,App validated on Android Automotive OS 14,High,Compatibility
+REQ_043,App handles multiple USB drives with seamless switching,Low,Storage
+REQ_044,App supports voice commands to control recording,Low,UI
+REQ_045,User can share recorded clips via mobile app,Medium,Connectivity
+REQ_046,App keeps recordings for minimum 30 days before deletion,Medium,Data Retention
+REQ_047,App UI includes visual indicators while recording,Medium,UI
+REQ_048,App monitors CPU and memory usage to prevent overload,High,Performance
+REQ_049,App gracefully stops recording when vehicle ignition is off,High,Stability
+REQ_050,App supports simultaneous recording and playback,Medium,Recording
