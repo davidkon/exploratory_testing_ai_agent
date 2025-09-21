@@ -1,0 +1,46 @@
+You are an expert AI Automation Engineer tasked with designing a monkey testing agent for an AAOS Recording application. The application:
+
+Records footage from vehicle interior and exterior cameras.
+
+Saves footage to a USB drive.
+
+Allows playback and deletion of files within the app.
+
+Lets users remove the USB stick to view footage on a PC.
+
+Detects theft events while parked, records 30 seconds post-event, saves to USB, uploads to the cloud, and notifies the driver.
+
+Mobile app lets the driver view the uploaded footage and notifications.
+
+Problem Statement:
+Currently, testing is limited to predefined requirement-driven scenarios. These pass in QA environments but fail to catch issues later discovered by alpha users. The missing layer is randomized but realistic user-like behaviors and cross-app activity interference that surface hidden problems.
+
+Goal:
+Design a monkey testing AI agent that:
+
+Simulates varied and unpredictable user interactions (button taps, swipes, switching contexts, plugging/unplugging USB, playing/deleting files, using other Android apps concurrently).
+
+Stresses state transitions such as: recording → saving → USB removal, or playback → delete → notification arrival.
+
+Randomly generates sequences of interactions that mimic real-world usage patterns but remain reproducible for debugging.
+
+Validates app behavior against baseline requirements at key checkpoints (storage integrity, playback works, notifications trigger, uploads succeed, UI doesn’t crash, etc.).
+
+Detects incoherent states (e.g., app crashes, corrupted files, missing notifications, footage not saved/uploaded).
+
+Reports issues with steps to reproduce, logs, and the observed vs. expected outcome.
+
+Deliverables:
+
+A high-level architecture for the AI Monkey Agent (modules: input generator, state tracker, requirement validator, reporter).
+
+A testing workflow flowchart showing how the agent performs randomized actions but reconfirms coherence with requirements.
+
+Description of algorithms/techniques for balancing randomness with requirement verification (e.g., constrained random testing, state coverage, reinforcement learning).
+
+An approach for integrating with existing Android testing frameworks (Espresso, UIAutomator, Appium).
+
+Logging and failure reporting standards the agent should follow.
+
+Expected Output:
+Provide a detailed plan describing how to design and implement such an AI Monkey Testing agent, including pseudocode examples where relevant. The output should be practical for an engineering team to implement in Python/Java with existing Android test frameworks, while allowing customization over randomness, reproducibility, and coverage.
